@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
-import { openContext } from "../Context-Api/ContextApi";
+import { openContext } from "../../Context-Api/ContextApi";
+import Table from "./Table";
 
-const FormContainer = () => {
+const TableContainer = () => {
   const { open } = useContext(openContext);
   return (
     <>
@@ -11,10 +12,10 @@ const FormContainer = () => {
           transitionDelay: "200ms",
         }}
       >
-        <h1>Form container</h1>
+        <Table />
       </div>
     </>
   );
 };
 
-export default FormContainer;
+export default TableContainer;
