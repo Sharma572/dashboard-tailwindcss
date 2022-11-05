@@ -26,7 +26,8 @@ const Sidebar = () => {
         <div
           className={`bg-[#6778EF] min-h-screen ${
             open ? "w-72" : "w-16"
-          } duration-500 text-gray-100 px-4 h-4`}
+          } duration-500 text-gray-100 px-4`}
+          style={{height:"110vh"}}
         >
           <div className="py-3 flex justify-around pt-8">
             <h1 className="text-white text-xl ">{open ? `Dasboard` : ""}</h1>

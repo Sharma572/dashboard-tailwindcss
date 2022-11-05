@@ -13,7 +13,13 @@ const Table = () => {
         <div className=" m-5 bg-white" style={{ width: "97%" }}>
           <h1 className="text-indigo-700 mb-2 pl-4 pt-3">Data Tables</h1>
           <span className="mb-2 pl-4 pt-3">
-            Show <input type="number" className="bg-[#f5f5f5] pl-2" style={{border:'1px solid black'}}/> entries{" "}
+            Show{" "}
+            <input
+              type="number"
+              className="bg-[#f5f5f5] pl-2"
+              style={{ border: "1px solid black" }}
+            />{" "}
+            entries{" "}
           </span>
 
           <table class="w-full mt-5 text-sm text-left text-gray-500 dark:text-gray-400">
@@ -114,16 +120,16 @@ const Table = () => {
           </table>
         </div>
         <div
-          className="flex justify-between m-5 bg-white py-3 px-3 "
-          style={{ width: "97%" }}
+          className="flex justify-between m-5 bg-white"
+          style={{ width: "97%",padding:'10px 14px' }}
         >
           <h1>Showing Result 1 to 10 of 51 entires</h1>
           <nav aria-label="Page navigation example">
-            <ul class="inline-flex -space-x-px">
+            <ul class="inline-flex -space-x-px pt-1">
               <li>
                 <a
                   href="#"
-                  class="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white rounded-l-lg hover:bg-gray-100"
+                  class="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white   hover:bg-[#6778EF] hover:text-white"
                 >
                   Previous
                 </a>
@@ -131,7 +137,7 @@ const Table = () => {
               <li>
                 <a
                   href="#"
-                  class="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white rounded-l-lg hover:bg-gray-100"
+                  class="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white   hover:bg-[#6778EF] hover:text-white"
                 >
                   1
                 </a>
@@ -139,7 +145,7 @@ const Table = () => {
               <li>
                 <a
                   href="#"
-                  class="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white rounded-l-lg hover:bg-gray-100"
+                  class="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white   hover:bg-[#6778EF] hover:text-white"
                 >
                   2
                 </a>
@@ -147,7 +153,7 @@ const Table = () => {
               <li>
                 <a
                   href="#"
-                  class="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white rounded-l-lg hover:bg-gray-100"
+                  class="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white   hover:bg-[#6778EF] hover:text-white"
                 >
                   3
                 </a>
@@ -155,7 +161,7 @@ const Table = () => {
               <li>
                 <a
                   href="#"
-                  class="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white rounded-l-lg hover:bg-gray-100"
+                  class="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white   hover:bg-[#6778EF] hover:text-white"
                 >
                   4
                 </a>
@@ -163,7 +169,7 @@ const Table = () => {
               <li>
                 <a
                   href="#"
-                  class="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white rounded-l-lg hover:bg-gray-100"
+                  class="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white   hover:bg-[#6778EF] hover:text-white"
                 >
                   5
                 </a>
@@ -171,7 +177,7 @@ const Table = () => {
               <li>
                 <a
                   href="#"
-                  class="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white rounded-l-lg hover:bg-gray-100"
+                  class="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white   hover:bg-[#6778EF] hover:text-white"
                 >
                   Next
                 </a>
