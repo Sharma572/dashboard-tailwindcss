@@ -1,5 +1,3 @@
-
-import { Popover } from "@headlessui/react";
 import { FiBell,  FiUser } from "react-icons/fi";
 import { BsMenuAppFill } from "react-icons/bs";
 import { useContext } from "react";
@@ -9,9 +7,10 @@ import { openContext } from "../Context-Api/ContextApi";
 export default function Topbar() {
   const {open} = useContext(openContext)
   return (
-    <Popover className={open ? "relative bg-[#8995ef]" : "bg-[#6778EF]"}>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="flex items-center justify-between  py-6 md:justify-start md:space-x-10">
+    <div className="fixed top-0 left-0 right-0">
+    <div className={open ? "relative bg-[#8995ef]" : "bg-[#6778EF]"}>
+      <div className={"mx-auto max-w-7xl px-4 sm:px-6 "}>
+        <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <h3 className="text-white">Dashobard</h3>
           </div>
@@ -42,6 +41,7 @@ export default function Topbar() {
           </div>
         </div>
       </div>
-    </Popover>
+    </div>
+    </div>
   );
 }

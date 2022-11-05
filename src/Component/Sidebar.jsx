@@ -22,19 +22,19 @@ const Sidebar = () => {
   return (
     <>
       <Topbar />
-      <section className="flex gap-12 absolute top-0 ">
+      <section className="flex gap-12 top-0 fixed ">
         <div
           className={`bg-[#6778EF] min-h-screen ${
             open ? "w-72" : "w-16"
           } duration-500 text-gray-100 px-4`}
-          style={{height:"110vh"}}
+          style={{ height: "110vh" }}
         >
           <div className="py-3 flex justify-around pt-8">
             <h1 className="text-white text-xl ">{open ? `Dasboard` : ""}</h1>
             <HiMenuAlt3
               size={26}
               className="cursor-pointer"
-              onClick={() => dispatch({type:'toggle'})}
+              onClick={() => dispatch({ type: "toggle" })}
             />
           </div>
           <div className="mt-4 flex flex-col gap-4 relative">
